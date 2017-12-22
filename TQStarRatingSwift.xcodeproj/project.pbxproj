@@ -14,6 +14,7 @@
 		855C14231FE5D8AE00C49C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855C14211FE5D8AE00C49C81 /* LaunchScreen.storyboard */; };
 		855C142E1FE5D8AE00C49C81 /* TQStarRatingSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855C142D1FE5D8AE00C49C81 /* TQStarRatingSwiftTests.swift */; };
 		855C14391FE5D8AE00C49C81 /* TQStarRatingSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855C14381FE5D8AE00C49C81 /* TQStarRatingSwiftUITests.swift */; };
+		855C14471FE5D8EE00C49C81 /* TQStarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855C14461FE5D8EE00C49C81 /* TQStarRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		855C14341FE5D8AE00C49C81 /* TQStarRatingSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TQStarRatingSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		855C14381FE5D8AE00C49C81 /* TQStarRatingSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQStarRatingSwiftUITests.swift; sourceTree = "<group>"; };
 		855C143A1FE5D8AE00C49C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855C14461FE5D8EE00C49C81 /* TQStarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TQStarRatingView.swift; sourceTree = "<group>"; };
+		85D4B1611FEDBE4D00B818F2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		855C140C1FE5D8AE00C49C81 = {
 			isa = PBXGroup;
 			children = (
+				85D4B1611FEDBE4D00B818F2 /* README.md */,
 				855C14171FE5D8AE00C49C81 /* TQStarRatingSwift */,
 				855C142C1FE5D8AE00C49C81 /* TQStarRatingSwiftTests */,
 				855C14371FE5D8AE00C49C81 /* TQStarRatingSwiftUITests */,
@@ -99,6 +103,7 @@
 			children = (
 				855C14181FE5D8AE00C49C81 /* AppDelegate.swift */,
 				855C141A1FE5D8AE00C49C81 /* ViewController.swift */,
+				855C14461FE5D8EE00C49C81 /* TQStarRatingView.swift */,
 				855C141C1FE5D8AE00C49C81 /* Main.storyboard */,
 				855C141F1FE5D8AE00C49C81 /* Assets.xcassets */,
 				855C14211FE5D8AE00C49C81 /* LaunchScreen.storyboard */,
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855C14471FE5D8EE00C49C81 /* TQStarRatingView.swift in Sources */,
 				855C141B1FE5D8AE00C49C81 /* ViewController.swift in Sources */,
 				855C14191FE5D8AE00C49C81 /* AppDelegate.swift in Sources */,
 			);
