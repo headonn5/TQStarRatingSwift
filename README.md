@@ -10,4 +10,4 @@ Reference Links:
 * [Raywenderlich](https://www.raywenderlich.com/1768/uiview-tutorial-for-ios-how-to-make-a-custom-uiview-in-ios-5-a-5-star-rating-view)
 * https://github.com/glenyi/FloatRatingView
 
-![Demo] (https://raw.githubusercontent.com/headonn5/TQStarRatingSwift/master/demo.gif)
+![Demo](https://raw.githubusercontent.com/headonn5/TQStarRatingSwift/master/demo.gif)
