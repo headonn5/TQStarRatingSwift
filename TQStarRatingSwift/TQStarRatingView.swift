@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TQStarRatingDelegate: class {
+  func ratingUpdated(rating: Double)
+}
+
 class TQStarRatingView: UIView {
   
   private let maxIcons: Int = 5
@@ -21,6 +25,7 @@ class TQStarRatingView: UIView {
   private var neutralImageViews: [UIImageView] = []
   private var rating: Double = 0
   open var ratingType: RatingType = .halfRatings
+  open weak var delegate: TQStarRatingDelegate?
   
   enum RatingType {
     case fullRatings
@@ -69,14 +74,11 @@ class TQStarRatingView: UIView {
   
   func changeRatings(inLocation location: CGPoint)
   {
-    print("Location is \(location)")
-    
     var updatedRating = 0.0
     
     for i in stride(from: (maxIcons-1), through: 0, by: -1) {
       
       let imageView = sadImageViews[i]
-      print("image frame is \(imageView.frame.origin.x)")
       guard location.x > imageView.frame.origin.x else {
         continue
       }
@@ -90,7 +92,6 @@ class TQStarRatingView: UIView {
       else {
         updatedRating = Double(i) + 1.0
       }
-      print("Updated rating is \(updatedRating)")
       break
     }
     
@@ -163,5 +164,15 @@ class TQStarRatingView: UIView {
       return
     }
     changeRatings(inLocation: touch.location(in: self))
+  }
+  
+  override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    // Update delegate
+    delegate?.ratingUpdated(rating: rating)
+  }
+  
+  override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    // Update delegate
+    delegate?.ratingUpdated(rating: rating)
   }
 }
